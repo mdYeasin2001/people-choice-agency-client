@@ -10,7 +10,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <h1 className="display-1 bg-primary">Welcome to people choice agency</h1>
-      <p>This is Sakib</p>
+      <p>This is Sakib. Our team member</p>
     </div>
   )
 }
