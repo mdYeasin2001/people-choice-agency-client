@@ -10,7 +10,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <h1 className="display-1 bg-primary">Welcome to people choice agency</h1>
-      <p>This is Sakib. Our team member.asbahbshjagdhsgdbn ndhjs Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore esse minus ipsa exercitationem amet blanditiis placeat omnis autem nulla. Eum, quaerat. Exercitationem magni corrupti delectus quidem non cupiditate officiis?</p>
+      <p>This is Sakib. Our team member...asbahbshjagdhsgdbn ndhjs Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore esse minus ipsa exercitationem amet blanditiis placeat omnis autem nulla. Eum, quaerat. Exercitationem magni corrupti delectus quidem non cupiditate officiis?</p>
+  
     </div>
   )
 }
