@@ -62,16 +62,16 @@ const Pricing = () => {
                     <Col>
                         <Card className="pricing_card">
                             <Card.Body className="text-center">
-                                <h3 className="text-primary">{plan.title}</h3>
+                                <h3 className="text-primary fw-bold mt-4">{plan.title}</h3>
                                 <Image src={plan.image} alt={plan.title} />
-                                <h2>${plan.price}<small className="pricingtable-type">/{plan.paymentSchema}</small></h2>
+                                <h2 className="price fw-bold mb-4">${plan.price}<small className="fw-normal">/{plan.paymentSchema}</small></h2>
                                 {
                                     plan.includedFeatures.map(feature =>
-                                        <Card.Text>
+                                        <Card.Text className="text-secondary features">
                                             {feature}
                                         </Card.Text>)
                                 }
-                                <button className="btn btn-corner btn-outline-danger">Start Now</button>
+                                <button className="btn btn-corner btn-outline-danger features mt-2">Start Now</button>
                             </Card.Body>
                         </Card>
                     </Col>
