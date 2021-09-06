@@ -2,7 +2,7 @@
 import React from 'react';
 import { Card, Col, Container, Row } from 'react-bootstrap';
 import Image from 'next/image'
-import whyOurAgencyImage from '../../asset/images/whyOurAgency.png'
+import whyOurAgencyImage from '../../assets/images/whyOurAgency.png'
 import SectionTitleUnderline from '../common/SectionTitleUnderline';
 
 const counterData = [

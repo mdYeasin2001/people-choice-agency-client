@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import portfolio1 from '../../asset/images/image08.jpg';
-import portfolio2 from '../../asset/images/image09.jpg';
-import portfolio3 from '../../asset/images/image10.jpg';
+import portfolio1 from '../../assets/images/image08.jpg';
+import portfolio2 from '../../assets/images/image09.jpg';
+import portfolio3 from '../../assets/images/image10.jpg';
 
 const Portfolio = () => {
     return (

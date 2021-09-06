@@ -2,9 +2,9 @@
 import React from 'react';
 import { Card, Col, Container, Row } from 'react-bootstrap';
 import Image from 'next/image';
-import basicPlanImage from '../../asset/images/basicPlan.png';
-import standardPlanImage from '../../asset/images/standardPlan.png';
-import premiumPlanImage from '../../asset/images/premiumPlan.png';
+import basicPlanImage from '../../assets/images/basicPlan.png';
+import standardPlanImage from '../../assets/images/standardPlan.png';
+import premiumPlanImage from '../../assets/images/premiumPlan.png';
 
 const plans = [
     {
