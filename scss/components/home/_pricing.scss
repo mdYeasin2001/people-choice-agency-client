@@ -1,0 +1,14 @@
+.pricing__container{
+    .pricing_card{
+        box-shadow: 0 0 10px rgba(31, 66, 135,0.3);
+        border-radius: 10px;
+        &:hover{
+        background: linear-gradient(to right,$danger,$warning);
+        color: white;
+        transition: all 0.5s;
+        .btn{
+            color: white;
+        }
+    }
+}
+}
