@@ -1,0 +1,46 @@
+$header-bg: "../../assets/images/header-bg.svg";
+.header_container {
+  background: url(#{$header-bg});
+  position: relative;
+  background-size: cover;
+  z-index: 1;
+  overflow-x: hidden;
+}
+
+.header_container::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  width: 100%;
+  right: 0;
+  height: 100%;
+  opacity: 0.8;
+  z-index: -9;
+}
+
+//learn more button style
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+// .btn::after {
+//   content: "";
+//   display: inline-block;
+//   border-radius: 10px;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   z-index: -1;
+//   transition: all 0.4s;
+// }
+
+// .btn:hover::after {
+//   transform: scaleX(1.4) scaleY(1.6);
+//   opacity: 0;
+// }
