@@ -4,6 +4,7 @@ import Pricing from '../components/home/pricing/Pricing'
 import WhyOurAgency from '../components/home/whyOurAgency/WhyOurAgency'
 import Portfolio from '../components/home/Portfolio'
 import Services from '../components/services/Services'
+import OurExpertise from '../components/home/OurExpertise/OurExpertise'
 
 export default function Home() {
 
@@ -22,7 +23,8 @@ export default function Home() {
       <Portfolio />
       {/* NewsLetter */}
       {/* Our Expertise */}
-      <Pricing />
+      <OurExpertise/>
+      <Pricing/>
       {/* ClientReview */}
       {/* SponsorBrand */}
       {/* GetInTouch */}
