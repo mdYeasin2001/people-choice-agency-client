@@ -1,0 +1,15 @@
+.sectionTitleUnderline__container{
+    .border_under{
+        height: 6px;
+        display: inline-block;
+        background: linear-gradient(to right, $danger, $warning);
+        margin-right: 10px;
+        border-radius: 5px;
+        &:first-child{
+            width: 50px;
+        }
+        &:last-child{
+            width: 100px;
+        }
+    }
+}

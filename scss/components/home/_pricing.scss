@@ -1,0 +1,31 @@
+.pricing__container{
+    .pricing_card{
+        box-shadow: 0 0 10px rgba(31, 66, 135,0.3);
+        border-radius: 10px;
+        .price{
+            color: $danger;
+        }
+        &:hover{
+        background: linear-gradient(to right,$danger,$warning);
+        color: white;
+        .price{
+            color: white;
+            transition: all 0.5s;
+        }
+        .text-primary,.text-secondary{
+            color: white !important;
+        }
+        transition: all 0.5s;
+        .btn{
+            color: white;
+        }
+    }
+    .features{
+        font-weight: 500;
+    }
+    .btn{
+        padding: 12px 35px;
+        font-size: 15px;
+    }
+}
+}
