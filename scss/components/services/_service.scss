@@ -1,0 +1,36 @@
+.Service__container{
+    .service_card{
+        .icon_box{
+            background: $info;
+            width: 150px;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 32% 68% 54% 46% / 46% 31% 69% 54% ;
+            transition: all .5s;
+        }
+        .service_button{
+            text-align: center;
+            width: 40px;
+            height: 40px;
+            font-size: 25px;
+            padding: 5px;
+            border-radius: 50%;
+            border: 1px solid $primary;
+            color: $primary;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all .5s;
+        }
+        &:hover .icon_box, &:hover .service_button{
+            background: linear-gradient(to right, $danger, $warning);
+            color: $white !important;
+            border: none;
+        }
+        &:hover{
+            box-shadow: 10px 10px 50px $info, -10px -10px 50px $info;
+        }
+    }
+}

@@ -1,8 +1,10 @@
 @import "./abstract/variables";
 @import "./overwrite/bootstrap";
 @import "./components/home/headerNav";
-@import "./components/home/_header";
+@import "./components/home/header";
 @import "./components/home/whyOurAgency";
 @import "./components/home/pricing";
 @import "./components/common/sectionTitleUnderline";
-@import "./components/home/_ourExpertise";
+@import "./components/services/service";
+@import "./components/portfolio";
+@import "./components/home/ourExpertise";
