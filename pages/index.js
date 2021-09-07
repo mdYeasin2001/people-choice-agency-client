@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Features from '../components/home/features/Features'
 import Portfolio from '../components/home/Portfolio'
 import Services from '../components/services/Services'
 
@@ -13,6 +14,7 @@ export default function Home() {
       </Head>
       <Services />
       <Portfolio />
+      <Features />
     </div>
   )
 }
