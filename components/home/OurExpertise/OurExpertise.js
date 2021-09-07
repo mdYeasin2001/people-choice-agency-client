@@ -24,7 +24,7 @@ const OurExpertise = () => {
     return (
       <div>
         <div className="text-center">
-           <h1 className='text-primary'>Our Expertise</h1>
+           <h1 className='text-primary fw-bold'>Our Expertise</h1>
            <SectionTitleUnderline/>
         </div>
         <Slider className='slide_show mx-5 mb-5' {...settings}>
