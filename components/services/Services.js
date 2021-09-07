@@ -31,7 +31,7 @@ const Services = () => {
     return (
         <Container className="py-5">
             <h2 className="text-center display-6 fw-bold text-primary pb-4">Our Specialization</h2>
-            <Row className="g-3">
+            <Row className="gx-3">
                 {services.map(service =>
                     <Service
                         title={service.title}
