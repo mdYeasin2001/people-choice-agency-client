@@ -1,20 +1,22 @@
-/* eslint-disable react/jsx-key */
 import React from 'react';
 import { Card, Col, Container, Row } from 'react-bootstrap';
 import Image from 'next/image'
-import whyOurAgencyImage from '../../assets/images/whyOurAgency.png'
-import SectionTitleUnderline from '../common/SectionTitleUnderline';
+import whyOurAgencyImage from '../../../assets/images/whyOurAgency.png'
+import SectionTitleUnderline from '../../common/SectionTitleUnderline';
 
 const counterData = [
     {
+        id: 1,
         title: 'Satisfied Clients',
         total: 9875,
     },
     {
+        id: 2,
         title: 'Project Lunched',
         total: 7894,
     },
     {
+        id: 3,
         title: 'Years Completed',
         total: 65,
     },
@@ -36,7 +38,7 @@ const WhyOurAgency = () => {
 
                     <Row xs={1} md={3} className="g-4">
                         {counterData.map(data => (
-                            <Col>
+                            <Col key={data.id}>
                                 <Card className="counter-box">
                                     <Card.Body className="text-center">
                                         <h2 className="text-primary fw-bold">{data.total}</h2>

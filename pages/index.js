@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Header from '../components/home/Header/Header'
-import Pricing from '../components/home/Pricing'
-import WhyOurAgency from '../components/home/WhyOurAgency'
+import Pricing from '../components/home/pricing/Pricing'
+import WhyOurAgency from '../components/home/whyOurAgency/WhyOurAgency'
 import Portfolio from '../components/home/Portfolio'
 import Services from '../components/services/Services'
 
