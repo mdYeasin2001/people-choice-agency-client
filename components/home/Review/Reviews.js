@@ -1,17 +1,19 @@
 import React from "react";
-import Expert from "./Expert";
+import ReviewPost from "./ReviewPost";
 import Slider from "react-slick";
-import ExpertiseData from './ExpertiseData';
+import { Container } from "react-bootstrap";
+import ReviewData from './ReviewData';
 import SectionTitleUnderline from "../../common/SectionTitleUnderline";
 
-const OurExpertise = () => {
+const Reviews = () => {
    const settings = {
       dots: true,
       infinite: true,
-      slidesToShow: 4,
-      slidesToScroll: 4,
+      slidesToShow: 1,
+      slidesToScroll: 1,
       autoplay: true,
       speed: 4000,
+      arrows: false,
       autoplaySpeed: 4000,
       cssEase: "linear",
       appendDots: dots => <ul>{dots}</ul>,
@@ -22,18 +24,18 @@ const OurExpertise = () => {
     )
     };
     return (
-      <div>
+      <Container className='mt-5'>
         <div className="text-center">
-           <h1 className='display-6 fw-bold text-primary'>Our Expertise</h1>
+           <h1 className='display-6 fw-bold text-primary'>What Our Clients Say’s</h1>
            <SectionTitleUnderline/>
         </div>
-        <Slider className='slide_show mx-5 mb-5' {...settings}>
+        <Slider className='slide_show mx-5 mb-5 row' {...settings}>
             {
-            ExpertiseData.map((expert) => <Expert key={expert.id} expert={expert}></Expert> )
+            ReviewData.map((review) => <ReviewPost key={review.id} review={review}></ReviewPost> )
             }
         </Slider>
-      </div>
+      </Container>
     );
   }
 
-export default OurExpertise;
+export default Reviews;

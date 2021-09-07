@@ -6,6 +6,7 @@ import Portfolio from '../components/home/Portfolio'
 import Services from '../components/services/Services'
 import OurExpertise from '../components/home/OurExpertise/OurExpertise'
 import SponsorBrand from '../components/home/SponsorBrand'
+import Reviews from '../components/home/Review/Reviews'
 
 export default function Home() {
 
@@ -27,6 +28,7 @@ export default function Home() {
       <OurExpertise />
       <Pricing />
       {/* ClientReview */}
+      <Reviews/>
       <SponsorBrand />
       {/* GetInTouch */}
 
