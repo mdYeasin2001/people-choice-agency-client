@@ -10,6 +10,9 @@ import brand6 from '../../assets/images/brand6.png';
 import brand7 from '../../assets/images/brand7.png';
 import brand8 from '../../assets/images/brand8.png';
 import brand9 from '../../assets/images/brand9.png';
+import brand10 from '../../assets/images/brand10.png';
+import brand11 from '../../assets/images/brand11.png';
+import brand12 from '../../assets/images/brand12.png';
 
 
 const SponsorBrand = () => {
@@ -54,13 +57,13 @@ const SponsorBrand = () => {
                     <Image src={brand9} alt="brand" />
                 </div>
                 <div>
-                    <Image src={brand1} alt="brand" />
+                    <Image src={brand10} alt="brand" />
                 </div>
                 <div>
-                    <Image src={brand2} alt="brand" />
+                    <Image src={brand11} alt="brand" />
                 </div>
                 <div>
-                    <Image src={brand3} alt="brand" />
+                    <Image src={brand12} alt="brand" />
                 </div>
                 <div>
                     <Image src={brand4} alt="brand" />
