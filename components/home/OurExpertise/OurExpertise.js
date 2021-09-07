@@ -1,62 +1,36 @@
-import React, { Component } from "react";
+import React from "react";
+import Expert from "./Expert";
 import Slider from "react-slick";
-import Image from 'next/image';
-import John from '../../../assets/images/John Doe.jpg';
-import Emily from '../../../assets/images/Emily Smith.jpg';
-import Blake from '../../../assets/images/Blake Run.jpg';
-import Jenna from '../../../assets/images/Jenna Smith.jpg';
+import ExpertiseData from './ExpertiseData';
+import SectionTitleUnderline from "../../common/SectionTitleUnderline";
 
 const OurExpertise = () => {
    const settings = {
       dots: true,
       infinite: true,
       slidesToShow: 4,
-      slidesToScroll: 1,
+      slidesToScroll: 4,
       autoplay: true,
       speed: 2000,
       autoplaySpeed: 2000,
       cssEase: "linear",
+      appendDots: dots => <ul>{dots}</ul>,
+      customPaging: i => (
+      <div className="ft-slick__dots--custom">
+        <div className="loading" />
+      </div>
+    )
     };
     return (
       <div>
-        <h2>Auto Play</h2>
-        <Slider className='slide_show m-5 p-3' {...settings}>
-          <div>
-            <Image height={300} src={John}/>
-          </div>
-          <div>
-            <Image height={300} src={Emily}/>
-          </div>
-          <div>
-            <Image height={300} src={Blake}/>
-          </div>
-          <div>
-            <Image height={300} src={Jenna}/>
-          </div>
-           <div>
-            <Image height={300} src={John}/>
-          </div>
-          <div>
-            <Image height={300} src={Emily}/>
-          </div>
-          <div>
-            <Image height={300} src={Blake}/>
-          </div>
-          <div>
-            <Image height={300} src={Jenna}/>
-          </div>
-           <div>
-            <Image height={300} src={John}/>
-          </div>
-          <div>
-            <Image height={300} src={Emily}/>
-          </div>
-          <div>
-            <Image height={300} src={Blake}/>
-          </div>
-          <div>
-            <Image height={300} src={Jenna}/>
-          </div>
+        <div className="text-center">
+           <h1 className='text-primary'>Our Expertise</h1>
+           <SectionTitleUnderline/>
+        </div>
+        <Slider className='slide_show mx-5 mb-5' {...settings}>
+            {
+            ExpertiseData.map((expert) => <Expert key={expert.id} expert={expert}></Expert> )
+            }
         </Slider>
       </div>
     );
