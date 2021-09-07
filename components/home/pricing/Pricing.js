@@ -1,10 +1,9 @@
-/* eslint-disable react/jsx-key */
 import React from 'react';
 import { Card, Col, Container, Row } from 'react-bootstrap';
 import Image from 'next/image';
-import basicPlanImage from '../../assets/images/basicPlan.png';
-import standardPlanImage from '../../assets/images/standardPlan.png';
-import premiumPlanImage from '../../assets/images/premiumPlan.png';
+import basicPlanImage from '../../../assets/images/basicPlan.png';
+import standardPlanImage from '../../../assets/images/standardPlan.png';
+import premiumPlanImage from '../../../assets/images/premiumPlan.png';
 
 const plans = [
     {
@@ -59,19 +58,19 @@ const Pricing = () => {
         <Container className="pricing__container">
             <Row xs={1} md={3} className="g-4">
                 {plans.map(plan => (
-                    <Col>
+                    <Col key={plan.id}>
                         <Card className="pricing_card">
                             <Card.Body className="text-center">
-                                <h3 className="text-primary">{plan.title}</h3>
+                                <h3 className="text-primary fw-bold mt-4">{plan.title}</h3>
                                 <Image src={plan.image} alt={plan.title} />
-                                <h2>${plan.price}<small className="pricingtable-type">/{plan.paymentSchema}</small></h2>
+                                <h2 className="price fw-bold mb-4">${plan.price}<small className="fw-normal">/{plan.paymentSchema}</small></h2>
                                 {
                                     plan.includedFeatures.map(feature =>
-                                        <Card.Text>
+                                        <Card.Text key={feature} className="text-secondary features">
                                             {feature}
                                         </Card.Text>)
                                 }
-                                <button className="btn btn-corner btn-outline-danger">Start Now</button>
+                                <button className="btn btn-corner btn-outline-danger features mt-2">Start Now</button>
                             </Card.Body>
                         </Card>
                     </Col>
