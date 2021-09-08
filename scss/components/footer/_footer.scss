@@ -2,12 +2,18 @@
   padding: 70px 0px;
   color: $white;
   background:url('../../../assets/images/image14.png'), linear-gradient(to right, $primary, $secondary, $primary);
-  font-weight: 700;
+  font-weight: 500;
     ul{
         margin:0;
         padding:0;
         li {
+          cursor: pointer;
             list-style: none;
+            transition: width 0.9s ;
+            &:hover{
+              // margin-left: 5px;
+              transform:translate(5px)
+            }
           }
     }
  
@@ -39,5 +45,21 @@
     align-items: center;
     justify-content: center;
     border-radius:50%;
-    margin: 5px;
+    margin: 10px;
+}
+.footer-title-underline-container{
+  .footer-title-underline{
+      height: 4px;
+      display: inline-block;
+      background-color: $white;
+      margin-right: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      &:first-child{
+          width: 20px;
+      }
+      &:last-child{
+          width: 50px;
+      }
+  }
 }

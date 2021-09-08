@@ -2,7 +2,8 @@ import Feature from "./Feature";
 import { HiOutlineLightBulb } from "react-icons/hi";
 import { Col, Container, Row } from "react-bootstrap";
 import featureImage from "../../../assets/images/image07.png";
-import Image from 'next/image'
+import Image from 'next/image';
+import SectionTitleUnderline from '../../common/SectionTitleUnderline';
 const featuresInfo = [
   {
     id: 1,
@@ -36,10 +37,11 @@ const featuresInfo = [
 const Features = () => {
   return (
     <Container>
-      <h2 className="text-center display-6 fw-bold text-primary pb-4">
+      <h2 className="text-center display-6 fw-bold text-primary ">
         Our Fetures
       </h2>
-      <Row className="align-item-center">
+      <span className="text-center"><SectionTitleUnderline/></span>
+      <Row className="align-item-center mt-4">
         <Col md={4} >
           {featuresInfo.slice(0,2).map((feature) => (
             <Feature

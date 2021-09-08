@@ -1,6 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
 import Image from "next/image";
-import footerImage from "../../../assets/images/image01.png";
+import footerImage from "../../../public/people-choice-agency-logo.png";
 import { FaFacebookF } from "react-icons/fa";
 import { AiOutlineInstagram, AiOutlineTwitter } from "react-icons/ai";
 import { MdCall, MdLocationOn } from "react-icons/md";
@@ -33,6 +33,10 @@ const Footer = () => {
             </Col>
             <Col md={2}>
               <h4 className="agency-footer-header">Our links</h4>
+              <div className="footer-title-underline-container">
+                <span className="footer-title-underline"></span>
+                <span className="footer-title-underline"></span>
+              </div>
               <ul>
                 <li> &#62; Home</li>
                 <li> &#62; About</li>
@@ -43,6 +47,10 @@ const Footer = () => {
             </Col>
             <Col md={2}>
               <h4 className="agency-footer-header">Our Services</h4>
+              <div className="footer-title-underline-container">
+                <span className="footer-title-underline"></span>
+                <span className="footer-title-underline"></span>
+              </div>
               <ul>
                 <li> &#62; Strategy & Research</li>
                 <li> &#62; Web Development</li>
@@ -53,6 +61,10 @@ const Footer = () => {
             </Col>
             <Col md={2}>
               <h4 className="agency-footer-header">Other link</h4>
+              <div className="footer-title-underline-container">
+                <span className="footer-title-underline"></span>
+                <span className="footer-title-underline"></span>
+              </div>
               <ul>
                 <li> &#62; FAQ</li>
                 <li> &#62; Portfolio</li>
@@ -64,6 +76,10 @@ const Footer = () => {
             </Col>
             <Col md={3}>
               <h4 className="agency-footer-header">Contact Us</h4>
+              <div className="footer-title-underline-container">
+                <span className="footer-title-underline"></span>
+                <span className="footer-title-underline"></span>
+              </div>
               <ul>
                 <li>
                   <div className="d-flex">
