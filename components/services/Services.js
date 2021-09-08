@@ -31,16 +31,14 @@ const Services = () => {
 
     return (
         <Container className="py-5">
-<<<<<<< HEAD
             <h2 className="text-center display-6 fw-bold text-primary pb-4">Our Specialization</h2>
             <Row className="gx-3">
-=======
             <h2 className="text-center display-6 fw-bold text-primary">Our Specialization</h2>
             <div className="d-flex justify-content-center pb-4">
                 <SectionTitleUnderline />
             </div>
+            </Row>
             <Row className="g-3">
->>>>>>> 5fb68bef7d09128b86af151c609b263e27ddcd54
                 {services.map(service =>
                     <Service
                         title={service.title}

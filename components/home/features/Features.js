@@ -3,7 +3,7 @@ import { HiOutlineLightBulb } from "react-icons/hi";
 import { Col, Container, Row } from "react-bootstrap";
 import featureImage from "../../../assets/images/image07.png";
 import Image from 'next/image'
-const featuresInfo1 = [
+const featuresInfo = [
   {
     id: 1,
     icon: <HiOutlineLightBulb />,
@@ -41,7 +41,7 @@ const Features = () => {
       </h2>
       <Row className="align-item-center">
         <Col md={4} >
-          {featuresInfo1.map((feature) => (
+          {featuresInfo.slice(0,2).map((feature) => (
             <Feature
               key={feature.id}
               icon={feature.icon}
@@ -54,7 +54,7 @@ const Features = () => {
           <Image className="img-fluid" src={featureImage} alt="Feature Image"/>
         </Col>
         <Col md={4}>
-          {featuresInfo2.map((feature) => (
+          {featuresInfo.slice(2,4).map((feature) => (
             <Feature
               key={feature.id}
               icon={feature.icon}
