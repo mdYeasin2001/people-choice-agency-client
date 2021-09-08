@@ -1,0 +1,43 @@
+.agency-footer {
+  padding: 70px 0px;
+  color: $white;
+  background:url('../../../assets/images/image14.png'), linear-gradient(to right, $primary, $secondary, $primary);
+  font-weight: 700;
+    ul{
+        margin:0;
+        padding:0;
+        li {
+            list-style: none;
+          }
+    }
+ 
+}
+
+.agency-footer-header {
+  font-weight: 700;
+}
+.footer-social-Icon-container {
+  span {
+    color: $danger;
+    background-color: $white;
+    margin: 5px;
+    padding: 4px 7px;
+    border-radius: 50%;
+    &:hover {
+      background: linear-gradient(to right, $danger, $warning);
+      color: $white;
+      transition: width 0.7s ease-in-out;
+    }
+  }
+}
+
+.footer-contact-icon{
+    background: linear-gradient(to right, $danger, $warning);
+    height: 45px;
+    width:45px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:50%;
+    margin: 5px;
+}

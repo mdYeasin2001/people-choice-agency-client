@@ -2,6 +2,7 @@ import Head from 'next/head'
 import '../scss/main.scss';
 import HeaderNav from '../components/common/HeaderNav';
 import { useRouter } from 'next/dist/client/router';
+import Footer from '../components/common/footer/Footer';
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -16,6 +17,7 @@ function MyApp({ Component, pageProps }) {
       <HeaderNav />
     }
     <Component {...pageProps} />
+    <Footer/>
   </>
 }
 
