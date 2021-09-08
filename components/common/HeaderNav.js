@@ -1,14 +1,14 @@
 import React from "react";
 import Image from 'next/image';
 import { Container, Nav, Navbar, NavbarBrand, NavLink } from "react-bootstrap"
-import Logo from '../../assets/images/image01.png'
+import Logo from '../../public/logo.png'
 
 const HeaderNav = () => {
   return (
     <div>
       <Navbar expand="lg" className="navbar-light sticky-top">
         <Container>
-          <NavbarBrand to="/home"><Image src={Logo} alt="PeopleChoice Agency"/></NavbarBrand>
+          <NavbarBrand style={{width: '200px'}} to="/home"><Image src={Logo} alt="PeopleChoice Agency"/></NavbarBrand>
           <Navbar.Toggle
             aria-controls="basic-navbar-nav"
             className="nav_toggle"
