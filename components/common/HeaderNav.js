@@ -1,7 +1,7 @@
 import React from "react";
 import Image from 'next/image';
 import { Container, Nav, Navbar, NavbarBrand, NavLink } from "react-bootstrap"
-import Logo from '../../public/people-choice-agency-logo.png'
+import Logo from '../../public/logo.png'
 
 const HeaderNav = () => {
   return (
