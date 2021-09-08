@@ -1,0 +1,14 @@
+.Portfolio__container{
+    .portfolio_button{
+        border: none !important;
+        padding: .5rem 2rem;
+        margin: .2rem;
+        color: $primary;
+        font-weight: 600;
+        &:focus{
+            color: $white;
+            background: linear-gradient(to right, $danger, $warning);
+            box-shadow: none !important;
+        }
+    }
+}

@@ -1,7 +1,8 @@
 import Feature from "./Feature";
 import { HiOutlineLightBulb } from "react-icons/hi";
-import { Col, Container, Image, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import featureImage from "../../../assets/images/image07.png";
+import Image from 'next/image'
 const featuresInfo1 = [
   {
     id: 1,
@@ -17,8 +18,6 @@ const featuresInfo1 = [
     description:
       "Praesent tincidunt congue est ut hendrerit. Pellentesque et eros sit amet ipsum venenatis.",
   },
-];
-const featuresInfo2 = [
   {
     id: 3,
     icon: <HiOutlineLightBulb />,
@@ -52,7 +51,7 @@ const Features = () => {
           ))}
         </Col>
         <Col md={4}>
-          <Image className="img-fluid" src={featureImage} alt="Feature Image" />
+          <Image className="img-fluid" src={featureImage} alt="Feature Image"/>
         </Col>
         <Col md={4}>
           {featuresInfo2.map((feature) => (
