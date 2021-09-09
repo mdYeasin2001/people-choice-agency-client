@@ -30,13 +30,10 @@ const Services = () => {
 
     return (
         <Container className="py-5">
-            <h2 className="text-center display-6 fw-bold text-primary pb-4">Our Specialization</h2>
-            <Row className="gx-3">
-            <h2 className="text-center display-6 fw-bold text-primary">Our Specialization</h2>
-            <div className="d-flex justify-content-center pb-4">
-                <SectionTitleUnderline />
+            <div className="text-center mb-4">
+                <h2 className='display-6 fw-bold text-primary'>Our Specialization</h2>
+                <SectionTitleUnderline/>
             </div>
-            </Row>
             <Row className="g-3">
                 {services.map(service =>
                     <Service
