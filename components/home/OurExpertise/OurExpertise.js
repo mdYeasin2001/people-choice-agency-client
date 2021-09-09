@@ -3,6 +3,7 @@ import Expert from "./Expert";
 import Slider from "react-slick";
 import ExpertiseData from './ExpertiseData';
 import SectionTitleUnderline from "../../common/SectionTitleUnderline";
+import { Container, Row } from "react-bootstrap";
 
 const OurExpertise = () => {
    const settings = {
@@ -22,17 +23,19 @@ const OurExpertise = () => {
     )
     };
     return (
-      <div>
+      <Container>
         <div className="text-center">
-           <h1 className='display-6 fw-bold text-primary'>Our Expertise</h1>
-           <SectionTitleUnderline/>
+            <h1 className='display-6 fw-bold text-primary'>Our Expertise</h1>
+            <SectionTitleUnderline/>
         </div>
-        <Slider className='slide_show mx-5 mb-5' {...settings}>
+        <Row>
+          <Slider className='overflow-hidden mb-5' {...settings}>
             {
-            ExpertiseData.map((expert) => <Expert key={expert.id} expert={expert}></Expert> )
+              ExpertiseData.map((expert) => <Expert key={expert.id} expert={expert}></Expert> )
             }
-        </Slider>
-      </div>
+          </Slider>
+        </Row>
+      </Container>
     );
   }
 
