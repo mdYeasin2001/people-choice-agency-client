@@ -1,6 +1,6 @@
 import React from "react";
 import Image from 'next/image';
-import { Nav, Navbar, NavbarBrand, NavLink } from "react-bootstrap"
+import { Nav, Navbar, NavbarBrand, NavLink, Button } from "react-bootstrap"
 import Logo from '../../public/logo.png'
 
 const HeaderNav = () => {
@@ -37,6 +37,11 @@ const HeaderNav = () => {
                 to='/'
               >
                 Contact Us
+              </NavLink>
+              <NavLink className='text-white nav_item'
+                to='/'
+              >
+                <Button className='brand_button'>Get A Quote</Button>
               </NavLink>
             </Nav>
         </Navbar.Collapse>
