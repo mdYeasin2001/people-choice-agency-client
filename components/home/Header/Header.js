@@ -22,7 +22,7 @@ const Header = () => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
                 pariatur at est vero nihil odio dolorum illum dolor soluta sequi!
               </p>
-              <button className="btn btn-warning rounded-pill p-3">Learn more</button>
+              <button className="brand_button mt-5">Learn more</button>
             </Col>
             <Col Col={6}>
               <Image height={500} src={headerImg} alt="Header Image" />

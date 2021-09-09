@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 import BlogCard from "./blog-card";
 import { fakeBlogsData } from "./fake-blog";
 

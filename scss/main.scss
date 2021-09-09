@@ -1,5 +1,6 @@
 @import "./abstract/variables";
 @import "./overwrite/bootstrap";
+@import "./global/global";
 @import "./components/home/headerNav";
 @import "./components/home/header";
 @import "./components/home/whyOurAgency";
@@ -9,4 +10,6 @@
 @import "./components/services/service";
 @import "./components/portfolio";
 @import "./components/common/_slideStyle";
-@import "./components/footer/footer"
+@import "./components/footer/footer";
+@import "./components/home/newsletterSubscribe";
+@import "./components/home/contactFrom";

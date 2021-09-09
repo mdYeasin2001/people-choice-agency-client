@@ -70,7 +70,7 @@ const Pricing = () => {
                                             {feature}
                                         </Card.Text>)
                                 }
-                                <button className="btn btn-corner btn-outline-danger features mt-2">Start Now</button>
+                                <button className="brand_button mt-2">Start Now</button>
                             </Card.Body>
                         </Card>
                     </Col>

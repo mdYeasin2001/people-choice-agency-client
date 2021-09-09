@@ -22,7 +22,7 @@ const OurExpertise = () => {
     )
     };
     return (
-      <div>
+      <div className="py-5">
         <div className="text-center">
            <h1 className='display-6 fw-bold text-primary'>Our Expertise</h1>
            <SectionTitleUnderline/>

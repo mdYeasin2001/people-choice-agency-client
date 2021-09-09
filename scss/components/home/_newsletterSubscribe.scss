@@ -1,0 +1,15 @@
+.Newsletter__subscribe__container{
+    background: url('../../../assets/images/newsletter-subscribe-bg.png'), linear-gradient(to right, $primary, $secondary, $primary);
+    background-size: cover;
+    .subscribe_form{
+        position: relative;
+        .subscribe_input{
+            border-radius: 0 15px 0 15px;
+        }
+        .subscribe_button{
+            position: absolute;
+            top: 1.8px;
+            right: 2px;
+        }
+    }
+}

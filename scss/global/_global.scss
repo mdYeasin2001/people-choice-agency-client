@@ -1,0 +1,8 @@
+.brand_button{
+    background: linear-gradient(to right, $danger, $warning);
+    border-radius: 0 15px 0 15px;
+    padding: .6rem 2rem;
+    border: none;
+    color: $white;
+    font-weight: 600;
+}
