@@ -115,7 +115,7 @@ const Footer = () => {
         </Container>
       </div>
       <div className="credit text-center fw-bold bg-primary text-white py-1">
-        <p>Copyright © 2021 DexignZone. All rights reserved.</p>
+        <p>Copyright © 2021 Daily Debugger Team. All rights reserved.</p>
       </div>
     </>
   );

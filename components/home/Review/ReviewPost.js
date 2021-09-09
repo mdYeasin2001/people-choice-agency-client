@@ -1,17 +1,18 @@
 import React from 'react';
 import Image from 'next/image';
+import { Row, Col} from 'react-bootstrap';
 
 const ReviewPost = ({review}) => {
     return (
-        <div className='d-flex justify-content-center row m-5'>
-           <div className='col-md-3'>
+        <Row className='d-flex justify-content-center m-5'>
+           <Col md={3}>
                <Image className='rounded-pill' src={review.image} alt={review.name}/>
-            </div> 
-           <div className='text-primary col-md-6'>
+            </Col> 
+           <Col md={6} className='text-primary'>
                <p>{review.description}</p>
                <h4 className='fw-bold'>{review.name}</h4>
-           </div>
-        </div>
+           </Col>
+        </Row>
     );
 };
 

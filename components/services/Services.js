@@ -7,7 +7,6 @@ import { AiOutlineSolution } from 'react-icons/ai';
 import SectionTitleUnderline from '../common/SectionTitleUnderline';
 
 const Services = () => {
-
     const services = [
         {
             id: 1,
@@ -31,11 +30,11 @@ const Services = () => {
 
     return (
         <Container className="py-5">
-            <Row className="gx-3">
-            <h2 className="text-center display-6 fw-bold text-primary">Our Specialization</h2>
-            <div className="d-flex justify-content-center pb-4">
-                <SectionTitleUnderline />
-            </div>
+            <Row className="gx-3 pb-4">
+                <h2 className="text-center display-6 fw-bold text-primary">Our Specialization</h2>
+                <div className="d-flex justify-content-center pb-4">
+                    <SectionTitleUnderline />
+                </div>
             </Row>
             <Row className="g-3">
                 {services.map(service =>
