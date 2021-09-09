@@ -5,10 +5,8 @@ import Logo from '../../public/logo.png'
 
 const HeaderNav = () => {
   return (
-    <div>
-      <Navbar expand="lg" className="navbar-light sticky-top">
-        <Container>
-          <NavbarBrand style={{width: '200px'}} to="/home"><Image src={Logo} alt="PeopleChoice Agency"/></NavbarBrand>
+      <Navbar expand="lg" className="navbar-light mx-4 sticky-top">
+        <NavbarBrand style={{width: '200px'}} to="/home"><Image src={Logo} alt="PeopleChoice Agency"/></NavbarBrand>
           <Navbar.Toggle
             aria-controls="basic-navbar-nav"
             className="nav_toggle"
@@ -20,31 +18,29 @@ const HeaderNav = () => {
               >
                 Home
               </NavLink>
-              <NavLink className='nav_item'
+              <NavLink className='text-white nav_item'
                 to='/'
               >
                 Services
               </NavLink>
-              <NavLink className='nav_item'
+              <NavLink className='text-white nav_item'
                 to='/'
               >
                 Blogs
               </NavLink>
-              <NavLink className='nav_item'
+              <NavLink className='text-white nav_item'
                 to='/'
               >
                 About
               </NavLink>
-              <NavLink className='nav_item'
+              <NavLink className='text-white nav_item'
                 to='/'
               >
                 Contact Us
               </NavLink>
             </Nav>
-          </Navbar.Collapse>
-        </Container>
+        </Navbar.Collapse>
       </Navbar>
-    </div>
   );
 };
 
