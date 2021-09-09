@@ -7,7 +7,6 @@ import { AiOutlineSolution } from 'react-icons/ai';
 import SectionTitleUnderline from '../common/SectionTitleUnderline';
 
 const Services = () => {
-
     const services = [
         {
             id: 1,
