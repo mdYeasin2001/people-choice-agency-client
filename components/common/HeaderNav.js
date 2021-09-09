@@ -1,6 +1,6 @@
 import React from "react";
 import Image from 'next/image';
-import { Container, Nav, Navbar, NavbarBrand, NavLink } from "react-bootstrap"
+import { Nav, Navbar, NavbarBrand, NavLink } from "react-bootstrap"
 import Logo from '../../public/logo.png'
 
 const HeaderNav = () => {
