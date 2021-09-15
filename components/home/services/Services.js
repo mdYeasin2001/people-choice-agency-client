@@ -4,7 +4,7 @@ import Service from './Service';
 import { FaLaptopCode } from 'react-icons/fa';
 import { BiCodeAlt } from 'react-icons/bi';
 import { AiOutlineSolution } from 'react-icons/ai';
-import SectionTitleUnderline from '../common/SectionTitleUnderline';
+import SectionTitleUnderline from '../../common/SectionTitleUnderline';
 
 const Services = () => {
     const services = [
