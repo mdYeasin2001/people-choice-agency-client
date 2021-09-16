@@ -1,0 +1,12 @@
+.service_button {
+        border-radius: 10px;
+        height: 50px;
+        width: 80%;
+        margin: 0.5rem;
+        border: none;
+        font-weight: 700;
+        &:hover{
+        background: linear-gradient(to right,$danger,$warning);
+        color: white;
+    }
+}
